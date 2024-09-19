@@ -3,9 +3,11 @@
   <hr class="text-white">
 
   <div class="list-group list-reset">
-    <Button class="list-group-item lit-group-item-action">
-      Microsoft Flight Simulator 2024
-    </Button>
+
+      <Button *ngFor="let tag of tags" class="list-group-item lit-group-item-action">
+        {{tag | uppercase | titlecase}}
+      </Button>
+
   </div>
 
 </div>
